@@ -1,0 +1,363 @@
+/* reset~ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* general~ */
+
+body {
+	background-color: #f2f2f2;
+	color: #888;
+	margin: 0;
+	padding: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+.wrapper {
+	width: 1080px;
+	display: block;
+	margin: 0 auto;
+}
+.button {
+	color: #222;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	background-color: #E0B21C;
+	padding: 5px 8px;
+	display: inline-block;
+	margin-top: 30px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #222;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 43px;
+	font-weight: 800;
+	line-height: 50px;
+	margin-bottom: 20px;
+	letter-spacing: 4px;
+}
+h2 {
+	color: #fff;
+	letter-spacing: 3px;
+	font-size: 16px;
+	margin-bottom: 100px;
+}
+h3 {
+	letter-spacing: 2px;
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+h5 {
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+span {
+	background-color: #222;
+	display: inline-block;
+	padding: 2px 8px;
+}
+p {
+	font-family: 'Gentium Basic', serif;
+	letter-spacing: 3px;
+}
+b {
+	font-weight: 700;
+	color: #222;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 2px;
+}
+img {
+	max-width: 100%;
+}
+section {
+	padding: 100px 0;
+}
+
+/* navigation~ */
+
+.logo {
+	background-color: #E0B21C;
+	color: #222;
+	font-size: 24px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 4px;
+	padding: 8px 7px;
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	z-index: 999;
+}
+.menu_toggle {
+	position: fixed;
+	right: 30px;
+	top: 30px;
+	cursor: pointer;
+	background-color: #E0B21C;
+	color:  #222;
+	font-size: 24px;
+	padding: 8px 12px;
+}
+.menu {
+	position: fixed;
+	top: -46px;
+	right: 75px;
+	opacity: 0;
+	transition: all .2s linear;
+	z-index: 999;
+}
+.menu.open {
+	top: 30px;
+	opacity: 1;
+}
+.menu li {
+	float: left;
+}
+.menu li a {
+	text-decoration: none;
+	color: #222;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 26px;
+	background-color: #E0B21C;
+	padding: 10px 13px;
+	float: left;
+	text-transform: uppercase;
+	transition: all .2s linear;
+}
+.menu li a:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+/* about~ */
+
+#about {
+	background-color: #fff;
+	padding-top: 200px;
+}
+#about .description {
+	float: left;
+	width: 720px;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+#about .photo {
+	float: right;
+	width: 360px;
+	text-align: right;
+}
+#about .photo img {
+	border-radius: 50%;
+	width: 200px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+/* portfolio~ */
+
+#portfolio {
+	padding-bottom: 70px;
+}
+.portfolio_item {
+	width: 340px;
+	height: 340px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.portfolio_item:nth-child(3n+2) {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.portfolio_item img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	transition: all .2s linear;
+}
+.portfolio_item:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 195, 0, 0.6);
+	transition: all .2s linear;
+	opacity: 0;
+	z-index: 1;
+}
+.portfolio_item:hover:before {
+	opacity: 1;
+}
+.portfolio_item:hover img {
+	transform: scale(1.2);
+}
+.portfolio_item_popup {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	display: none;
+}
+.portfolio_item_popup .content {
+	width: 500px;
+	max-height: 90vh;
+	overflow-y: auto;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 30px;
+	position: relative;
+}
+.portfolio_item_popup img {
+	margin-bottom: 20px;
+}
+.portfolio_item_popup h4 {
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+.close_popup {
+	position: absolute;
+	top: 26px;
+	right: 30px;
+	color: #888;
+	font-size: 42px;
+}
+
+/* resume~ */
+
+#resume {
+	background-color: #fff;
+	position: relative;
+}
+#resume .column {
+	float: left;
+	width: 340px;
+}
+#resume .column:nth-child(2) {
+	margin: 0 30px;
+}
+.skill_title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: #222;
+	line-height: 16px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.skill_rail {
+	background-color: #eee;
+	height: 30px;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+.skill_percentage {
+	min-width: 30px;
+	max-width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #FFC300;
+	border-radius: 2px;
+}
+
+/* services~ */
+
+#services {
+	background-color: #E0B21C;
+}
+#services .box {
+	width: 25%;
+	height: 175px;
+	float: left;
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: background-color .2s linear;
+	-o-transition: background-color .2s linear;
+	transition: background-color .2s linear;
+}
+#services .box:hover {
+	background-color: #FFD650;
+}
+#services p {
+	color: #222;
+	letter-spacing: 1px;
+}
+#services i {
+	font-size: 40px;
+	color: #222;
+}
