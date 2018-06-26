@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Mesar</title>
-	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans:400,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans:400,500,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -195,8 +195,80 @@
 			</div>
 		</div>
 	</section>
-
+	<section id="blog" name="blog">
+		<div class="wrapper">
+			<h2 class="section_title"><span>Blog</span></h2>
+			<div class="container cf">
+				<div class="post">
+					<h4><a href="#">I would buy this template</a></h4>
+					<h6 class="date">June 18, 2015</h6>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					<a href="#" class="readmore"><b>read more</b></a>
+				</div>
+				<div class="post">
+					<h4><a href="#">This is what happened</a></h4>
+					<h6 class="date">June 18, 2015</h6>
+					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+					<a href="#" class="readmore"><b>read more</b></a>
+				</div>
+				<div class="post">
+					<h4><a href="#">Just a quick update</a></h4>
+					<h6 class="date">June 18, 2015</h6>
+					<p>Qe porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquamcorporis.</p>
+					<a href="#" class="readmore"><b>read more</b></a>
+				</div>
+				<div class="post">
+					<h4><a href="#">Hey, what's up?!</a></h4>
+					<h6 class="date">June 18, 2015</h6>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					<a href="#" class="readmore"><b>read more</b></a>
+				</div>
+				<div class="post">
+					<h4><a href="#">Hello world!</a></h4>
+					<h6 class="date">June 18, 2015</h6>
+					<p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!</p>
+					<a href="#" class="readmore"><b>read more</b></a>
+				</div>
+				<div class="post">
+					<h4><a href="#">I went to london last week</a></h4>
+					<h6 class="date">June 18, 2015</h6>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.</p>
+					<a href="#" class="readmore"><b>read more</b></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" name="contact">
+		<div class="wrapper">
+			<h2 class="section_title"><span>Contact</span></h2>
+			<form class="contact_form cf">
+				<input type="text" class="input_field" placeholder="Name* :" />
+				<input type="email" class="input_field" placeholder="E-mail* :" />
+				<input type="text" class="input_field" placeholder="Subject* :" />
+				<textarea placeholder="Comment :"></textarea>
+				<input type="submit" value="Send message" class="send" />
+			</form>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="wrapper cf">
+			<div class="part">
+				<h5>Launch beautiful, responsive websites faster with themes</h5>
+			</div>
+			<div class="part top">
+				<a href="#about">Back to top <i class="fas fa-angle-up"></i></a>
+			</div>
+			<div class="part social">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-dribbble"></i></a>
+				<a href="#"><i class="fab fa-deviantart"></i></a>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="assets/js/masonry.pkgd.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<script src="assets/js/scripts.js"></script>
 </body>
 </html>
