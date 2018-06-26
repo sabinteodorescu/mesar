@@ -198,7 +198,7 @@
 	<section id="blog" name="blog">
 		<div class="wrapper">
 			<h2 class="section_title"><span>Blog</span></h2>
-			<div class="container cf">
+			<div class="container posts cf">
 				<div class="post">
 					<h4><a href="#">I would buy this template</a></h4>
 					<h6 class="date">June 18, 2015</h6>
@@ -267,8 +267,8 @@
 		</div>
 	</footer>
 	
-	<script src="assets/js/masonry.pkgd.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="assets/js/masonry.pkgd.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 </body>
 </html>

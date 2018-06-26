@@ -43,4 +43,10 @@ function scroll(){
 $(function(){
 	skillPercentage();
 	scroll();
+	$('.posts').masonry({
+	 	// options
+	 	itemSelector: '.post',
+	 	columnWidth: '.post',
+	 	gutter: 30
+	});
 })
