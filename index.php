@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mesar</title>
 	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans:400,500,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+
+	<!-- ~navigation -->
+
 	<a href="#" class="logo">Mesar</a>
 	<nav>
 		<div class="menu_toggle" onclick="toggleMenu();">
@@ -21,6 +25,8 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
+
+	<!-- ~about -->
 	
 	<section id="about" name="about">
 		<div class="wrapper cf">
@@ -29,10 +35,13 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 			<div class="photo">
-				<img src="http://via.placeholder.com/200x200">
+				<img src="assets/img/logo.jpg">
 			</div>
 		</div>
 	</section>
+
+	<!-- ~portfolio -->
+
 	<section id="portfolio" name="portfolio">
 		<div class="wrapper">
 			<h2><span>Portfolio</span></h2>
@@ -112,6 +121,9 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- ~resume -->
+
 	<section id="resume" name="resume">
 		<div class="wrapper">
 			<h2 class="section_title"><span>About me</span></h2>
@@ -148,6 +160,9 @@
 			
 		</div>
 	</section>
+
+	<!-- ~services -->
+
 	<section id="services" name="services">
 		<div class="wrapper">
 			<h2 class="section_title"><span>Services</span></h2>
@@ -195,6 +210,9 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- ~blog -->
+
 	<section id="blog" name="blog">
 		<div class="wrapper">
 			<h2 class="section_title"><span>Blog</span></h2>
@@ -238,6 +256,9 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- ~contact -->
+
 	<section id="contact" name="contact">
 		<div class="wrapper">
 			<h2 class="section_title"><span>Contact</span></h2>
@@ -250,6 +271,9 @@
 			</form>
 		</div>
 	</section>
+
+	<!-- ~footer -->
+
 	<footer id="footer">
 		<div class="wrapper cf">
 			<div class="part">
@@ -266,6 +290,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- ~scripts -->
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="assets/js/masonry.pkgd.min.js"></script>
