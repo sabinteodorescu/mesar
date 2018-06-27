@@ -43,10 +43,11 @@ function scroll(){
 $(function(){
 	skillPercentage();
 	scroll();
-	$('.posts').masonry({
-	 	// options
-	 	itemSelector: '.post',
-	 	columnWidth: '.post',
-	 	gutter: 30
-	});
+	if($('window').width() > 740) {
+		$('.posts').masonry({
+		 	itemSelector: '.post',
+		 	columnWidth: '.post',
+		 	gutter: 30
+		});
+	}
 })
